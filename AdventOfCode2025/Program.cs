@@ -1,7 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AdventOfCode2025.Days;
-using System.Security.Cryptography;
-
 Console.WriteLine("Hello, World!");
 
 var problem = new Day00();
