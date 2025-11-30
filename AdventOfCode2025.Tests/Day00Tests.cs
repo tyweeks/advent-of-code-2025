@@ -3,7 +3,7 @@
     public class Day00Tests
     {
         [Fact]
-        public void Test1()
+        public void ExampleTestMethod_ShouldDoSomething()
         {
 
         }
