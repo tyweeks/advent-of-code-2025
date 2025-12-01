@@ -28,6 +28,7 @@ public class Day01 : IProblem
             }
 
             currentNum = ((currentNum % 100) + 100) % 100;
+
             if (currentNum == 0)
             {
                 zeroCounter++;
