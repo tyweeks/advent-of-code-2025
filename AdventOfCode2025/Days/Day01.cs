@@ -49,39 +49,27 @@ public class Day01 : IProblem
             int startingNum = currentNum;
             var direction = line[0];
             var value = int.Parse(line[1..]);
-            if (direction == 'L')
+            for (int i = 0; i < value; i++)
             {
-                currentNum -= value;
-            }
-            else if (direction == 'R')
-            {
-                currentNum += value;
-            }
-            else
-            {
-                throw new Exception("Invalid direction");
-            }
+                if (direction == 'L')
+                {
+                    currentNum -= 1;
+                }
+                else if (direction == 'R')
+                {
+                    currentNum += 1;
+                }
+                else
+                {
+                    throw new Exception("Invalid direction");
+                }
 
-            while (currentNum < 0)
-            {
-                currentNum += 100;
-                zeroCounter++;
-            }
+                currentNum = ((currentNum % 100) + 100) % 100;
 
-            while (currentNum > 99)
-            {
-                currentNum -= 100;
-                zeroCounter++;
-            }
-
-            if (currentNum == 0 && direction == 'L')
-            {
-                zeroCounter++;
-            }
-
-            if (startingNum == 0 && direction == 'L')
-            {
-                zeroCounter--;
+                if (currentNum == 0)
+                {
+                    zeroCounter++;
+                }
             }
         }
 
