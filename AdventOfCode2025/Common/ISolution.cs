@@ -1,6 +1,6 @@
-﻿namespace AdventOfCode2025.Common;
+﻿namespace AdventOfCode.Common;
 
-public interface IProblem
+public interface ISolution
 {
     string SolvePart1(string input);
     string SolvePart2(string input);

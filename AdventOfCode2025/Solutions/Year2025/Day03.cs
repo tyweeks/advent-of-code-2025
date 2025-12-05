@@ -1,8 +1,8 @@
-﻿using AdventOfCode2025.Common;
+﻿using AdventOfCode.Common;
 
-namespace AdventOfCode2025.Days;
+namespace AdventOfCode.Solutions.Year2025;
 
-public class Day03 : IProblem
+public class Day03 : ISolution
 {
     public string SolvePart1(string input)
     {

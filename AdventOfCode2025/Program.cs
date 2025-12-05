@@ -1,9 +1,10 @@
-﻿using AdventOfCode2025.Common;
+﻿using AdventOfCode.Common;
 
-int dayNumber = 4;
+int yearNumber = 2025;
+int dayNumber = 5;
 
-var problem = ProblemFactory.Get(dayNumber);
-var input = ProblemFactory.GetInput(dayNumber);
+var problem = SolutionFactory.GetSolution(yearNumber, dayNumber);
+var input = SolutionFactory.GetInput(yearNumber, dayNumber);
 
 Console.WriteLine($"Day {dayNumber:D2} Solutions:");
 Console.WriteLine($"Part 1: {problem.SolvePart1(input)}");

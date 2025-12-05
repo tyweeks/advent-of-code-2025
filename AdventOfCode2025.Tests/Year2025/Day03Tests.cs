@@ -1,6 +1,6 @@
-﻿using AdventOfCode2025.Days;
+﻿using AdventOfCode.Solutions.Year2025;
 
-namespace AdventOfCode2025.Tests;
+namespace AdventOfCode.Tests.Year2025;
 
 public class Day03Tests
 {

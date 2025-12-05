@@ -1,13 +1,15 @@
-﻿using AdventOfCode2025.Days;
+﻿using AdventOfCode.Solutions.Year2015;
 
-namespace AdventOfCode2025.Tests;
+namespace AdventOfCode2015.Tests;
 
-public class Day01Tests
+public class Day03Tests
 {
-    private readonly Day01 _problem = new();
+    private readonly Day03 _problem = new();
 
     [Theory]
-    [InlineData("L68\r\nL30\r\nR48\r\nL5\r\nR60\r\nL55\r\nL1\r\nL99\r\nR14\r\nL82", "3")]
+    [InlineData(">", "2")]
+    [InlineData("^>v<", "4")]
+    [InlineData("^v^v^v^v^v", "2")]
     public void SolvePart1(string input, string expected)
     {
         var result = _problem.SolvePart1(input);
@@ -15,7 +17,9 @@ public class Day01Tests
     }
 
     [Theory]
-    [InlineData("L68\r\nL30\r\nR48\r\nL5\r\nR60\r\nL55\r\nL1\r\nL99\r\nR14\r\nL82", "6")]
+    [InlineData("^v", "3")]
+    [InlineData("^>v<", "3")]
+    [InlineData("^v^v^v^v^v", "11")]
     public void SolvePart2(string input, string expected)
     {
         var result = _problem.SolvePart2(input);

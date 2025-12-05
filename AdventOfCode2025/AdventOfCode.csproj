@@ -8,19 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Inputs\day00.txt">
+    <None Update="Inputs\Year2025\day05.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Inputs\day04.txt">
+    <None Update="Inputs\Year2025\day04.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Inputs\day03.txt">
+    <None Update="Inputs\Year2025\day03.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Inputs\day02.txt">
+    <None Update="Inputs\Year2025\day02.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Inputs\day01.txt">
+    <None Update="Inputs\Year2025\day01.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
